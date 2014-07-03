@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="aYeSGm" name="JOAuth" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.jrlanglois.JOAuth" includeBinaryInAppConfig="0"
+              jucerVersion="3.1.0" companyName="Jo&#235;l R. Langlois" companyWebsite="www.jrlanglois.com"
+              companyEmail="joel.r.langlois@gmail.com">
+  <MAINGROUP id="Ych92H" name="JOAuth">
+    <GROUP id="{DE28AC2C-D53F-00CD-2217-50A040E9BBEF}" name="Module">
+      <GROUP id="{D1333F56-A4A1-16D4-2052-9EA9231FE290}" name="Core">
+        <FILE id="qIJjKV" name="JOAuthClass.cpp" compile="1" resource="0" file="Source/Module/Core/JOAuthClass.cpp"/>
+        <FILE id="YEh2my" name="JOAuthClass.h" compile="0" resource="0" file="Source/Module/Core/JOAuthClass.h"/>
+      </GROUP>
+      <FILE id="dD4Exh" name="JOAuth.cpp" compile="1" resource="0" file="Source/Module/JOAuth.cpp"/>
+      <FILE id="PoPTtD" name="JOAuth.h" compile="0" resource="0" file="Source/Module/JOAuth.h"/>
+    </GROUP>
+    <GROUP id="{097D0171-BCF9-82F2-0455-375CFDE18A85}" name="Main">
+      <FILE id="DlvCAw" name="Main.cpp" compile="1" resource="0" file="Source/Main/Main.cpp"/>
+      <FILE id="REr5iQ" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/Main/MainComponent.cpp"/>
+      <FILE id="mrTD69" name="MainComponent.h" compile="0" resource="0" file="Source/Main/MainComponent.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2012 targetFolder="Builds/VisualStudio2012">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="JOAuth"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="JOAuth"/>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="JOAuth"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="2" targetName="JOAuth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="../juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../juce/modules"/>
+        <MODULEPATH id="juce_events" path="../juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../juce/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../juce/modules"/>
+        <MODULEPATH id="juce_core" path="../juce/modules"/>
+      </MODULEPATHS>
+    </VS2012>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="JOAuth"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="JOAuth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="../juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../juce/modules"/>
+        <MODULEPATH id="juce_events" path="../juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../juce/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../juce/modules"/>
+        <MODULEPATH id="juce_core" path="../juce/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8E22F0D8-0348-84B9-634A-50F07C0F5AF7}") = "JOAuth", "JOAuth.vcxproj", "{66A08B56-568B-02F6-1535-43CD479FA18A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66A08B56-568B-02F6-1535-43CD479FA18A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66A08B56-568B-02F6-1535-43CD479FA18A}.Debug|Win32.Build.0 = Debug|Win32
+		{66A08B56-568B-02F6-1535-43CD479FA18A}.Release|Win32.ActiveCfg = Release|Win32
+		{66A08B56-568B-02F6-1535-43CD479FA18A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
