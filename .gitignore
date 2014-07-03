@@ -61,7 +61,3 @@ CVS
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
 Backup[ ]of[ ]*.numbers/
-
-#Content files
-Content/*
-!Content/README.txt
