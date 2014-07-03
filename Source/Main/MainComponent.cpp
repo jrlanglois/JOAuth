@@ -3,6 +3,8 @@
 MainContentComponent::MainContentComponent()
 {
     setSize (500, 400);
+
+    joauth::OAuth2Client client;
 }
 
 //==============================================================================

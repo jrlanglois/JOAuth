@@ -1,7 +1,7 @@
 #ifndef MAIN_COMPONENT_H
 #define MAIN_COMPONENT_H
 
-#include "JuceHeader.h"
+#include "../Module/JOAuth.h"
 
 class MainContentComponent : public juce::Component
 {
