@@ -4,7 +4,9 @@ MainContentComponent::MainContentComponent()
 {
     setSize (500, 400);
 
-    joauth::OAuth2Client client;
+    joauth::OAuth1Client v1Client;
+    joauth::OAuth1aClient v1aClient;
+    joauth::OAuth2Client v2Client;
 }
 
 //==============================================================================

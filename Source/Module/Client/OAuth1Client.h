@@ -1,6 +1,8 @@
 #ifndef JOAUTH_OAUTH_1_H
 #define JOAUTH_OAUTH_1_H
 
+#include "../Source/OAuthSource.h"
+
 /**
     An OAuth 1.0 client implementation.
 

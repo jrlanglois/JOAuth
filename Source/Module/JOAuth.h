@@ -6,6 +6,9 @@
 
     This could be useful for designing your own master header files or modules,
     where you want to reduce knowingly redundant inclusions.
+
+    Obviously, the JuceHeader inclusion is manditory!
+    It MUST be present sometime before this module header to make use of this library!
 */
 #if ! JOAUTH_DONT_INCLUDE_JUCE_HEADER
  #include "JuceHeader.h"
@@ -24,6 +27,26 @@ namespace joauth
    #ifndef JOAUTH_OAUTH_2_CLIENT_H
     #include "Client/OAuth2Client.h"
    #endif //JOAUTH_OAUTH_2_CLIENT_H
+
+   #ifndef JOAUTH_DROPBOX_SOURCE_H
+    #include "Source/DropboxSource.h"
+   #endif //JOAUTH_DROPBOX_SOURCE_H
+
+   #ifndef JOAUTH_GITHUB_SOURCE_H
+    #include "Source/GitHubSource.h"
+   #endif //JOAUTH_GITHUB_SOURCE_H
+
+   #ifndef JOAUTH_OAUTH_SOURCE_H
+    #include "Source/OAuthSource.h"
+   #endif //JOAUTH_OAUTH_SOURCE_H
+
+   #ifndef JOAUTH_SOUNDCLOUD_SOURCE_H
+    #include "Source/SoundCloudSource.h"
+   #endif //JOAUTH_SOUNDCLOUD_SOURCE_H
+
+   #ifndef JOAUTH_TWITTER_SOURCE_H
+    #include "Source/TwitterSource.h"
+   #endif //JOAUTH_TWITTER_SOURCE_H
 }
 
 /**
