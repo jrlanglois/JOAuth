@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="aYeSGm" name="JOAuth" projectType="guiapp" version="1.0.0"
+<JUCERPROJECT id="aYeSGm" name="JOAuth" projectType="guiapp" version="0.0.1"
               bundleIdentifier="com.jrlanglois.JOAuth" includeBinaryInAppConfig="0"
               jucerVersion="3.1.0" companyName="Jo&#235;l R. Langlois" companyWebsite="www.jrlanglois.com"
               companyEmail="joel.r.langlois@gmail.com">
   <MAINGROUP id="Ych92H" name="JOAuth">
-    <GROUP id="{DE28AC2C-D53F-00CD-2217-50A040E9BBEF}" name="Module">
-      <GROUP id="{D1333F56-A4A1-16D4-2052-9EA9231FE290}" name="Core">
-        <FILE id="qIJjKV" name="JOAuthClass.cpp" compile="1" resource="0" file="Source/Module/Core/JOAuthClass.cpp"/>
-        <FILE id="YEh2my" name="JOAuthClass.h" compile="0" resource="0" file="Source/Module/Core/JOAuthClass.h"/>
-      </GROUP>
-      <FILE id="dD4Exh" name="JOAuth.cpp" compile="1" resource="0" file="Source/Module/JOAuth.cpp"/>
-      <FILE id="PoPTtD" name="JOAuth.h" compile="0" resource="0" file="Source/Module/JOAuth.h"/>
-    </GROUP>
     <GROUP id="{097D0171-BCF9-82F2-0455-375CFDE18A85}" name="Main">
       <FILE id="DlvCAw" name="Main.cpp" compile="1" resource="0" file="Source/Main/Main.cpp"/>
       <FILE id="REr5iQ" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/Main/MainComponent.cpp"/>
       <FILE id="mrTD69" name="MainComponent.h" compile="0" resource="0" file="Source/Main/MainComponent.h"/>
+    </GROUP>
+    <GROUP id="{E6EB0660-7ECA-9EA7-0C93-D38EAFBD75AC}" name="Module">
+      <GROUP id="{89805CD8-FCF5-F33C-0792-BC272A09A8C5}" name="Client">
+        <FILE id="eKaIu2" name="OAuth1aClient.cpp" compile="0" resource="0"
+              file="Source/Module/Client/OAuth1aClient.cpp"/>
+        <FILE id="fCIEaX" name="OAuth1aClient.h" compile="0" resource="0" file="Source/Module/Client/OAuth1aClient.h"/>
+        <FILE id="wjBeVw" name="OAuth1Client.cpp" compile="0" resource="0"
+              file="Source/Module/Client/OAuth1Client.cpp"/>
+        <FILE id="PK2NcB" name="OAuth1Client.h" compile="0" resource="0" file="Source/Module/Client/OAuth1Client.h"/>
+        <FILE id="hO8dEI" name="OAuth2Client.cpp" compile="0" resource="0"
+              file="Source/Module/Client/OAuth2Client.cpp"/>
+        <FILE id="DNxuSD" name="OAuth2Client.h" compile="0" resource="0" file="Source/Module/Client/OAuth2Client.h"/>
+      </GROUP>
+      <GROUP id="{EA2DE63D-1E27-DC6D-AAC0-03D3B5573BB4}" name="Source">
+        <FILE id="gUseOJ" name="DropboxSource.cpp" compile="0" resource="0"
+              file="Source/Module/Source/DropboxSource.cpp"/>
+        <FILE id="ih1lgI" name="DropboxSource.h" compile="0" resource="0" file="Source/Module/Source/DropboxSource.h"/>
+        <FILE id="UiK4Wd" name="GitHubSource.cpp" compile="0" resource="0"
+              file="Source/Module/Source/GitHubSource.cpp"/>
+        <FILE id="dghcir" name="GitHubSource.h" compile="0" resource="0" file="Source/Module/Source/GitHubSource.h"/>
+        <FILE id="xiz07f" name="OAuthSource.cpp" compile="0" resource="0" file="Source/Module/Source/OAuthSource.cpp"/>
+        <FILE id="IFdqoa" name="OAuthSource.h" compile="0" resource="0" file="Source/Module/Source/OAuthSource.h"/>
+        <FILE id="VK0BIy" name="SoundCloudSource.cpp" compile="0" resource="0"
+              file="Source/Module/Source/SoundCloudSource.cpp"/>
+        <FILE id="NLgTVQ" name="SoundCloudSource.h" compile="0" resource="0"
+              file="Source/Module/Source/SoundCloudSource.h"/>
+        <FILE id="eiPv56" name="TwitterSource.cpp" compile="0" resource="0"
+              file="Source/Module/Source/TwitterSource.cpp"/>
+        <FILE id="k41hQN" name="TwitterSource.h" compile="0" resource="0" file="Source/Module/Source/TwitterSource.h"/>
+      </GROUP>
+      <FILE id="iJS5rJ" name="JOAuth.cpp" compile="1" resource="0" file="Source/Module/JOAuth.cpp"/>
+      <FILE id="MSdPMJ" name="JOAuth.h" compile="0" resource="0" file="Source/Module/JOAuth.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
@@ -69,5 +93,6 @@
     <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
-  <JUCEOPTIONS/>
+  <JUCEOPTIONS JUCE_ENABLE_REPAINT_DEBUGGING="disabled" JUCE_WEB_BROWSER="disabled"
+               JUCE_ENABLE_LIVE_CONSTANT_EDITOR="disabled"/>
 </JUCERPROJECT>

@@ -1,14 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="JOAuth">
       <UniqueIdentifier>{B61F6370-5F4A-51A1-0227-78F995E6DAE2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JOAuth\Main">
+      <UniqueIdentifier>{15C4C0D5-DBAE-FB0E-2050-25BD2040FD07}</UniqueIdentifier>
+    </Filter>
     <Filter Include="JOAuth\Module">
       <UniqueIdentifier>{A5AA9831-E2AB-4D1C-C666-8ADD22039FBC}</UniqueIdentifier>
     </Filter>
-    <Filter Include="JOAuth\Main">
-      <UniqueIdentifier>{15C4C0D5-DBAE-FB0E-2050-25BD2040FD07}</UniqueIdentifier>
+    <Filter Include="JOAuth\Module\Client">
+      <UniqueIdentifier>{F25C4754-AC93-4574-88FF-960C9A5BB996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JOAuth\Module\Source">
+      <UniqueIdentifier>{8C888F6C-22CD-51CE-FEAB-5A246F29A7E8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Juce Modules">
       <UniqueIdentifier>{422C46B7-0467-2DB0-BF3C-16DFCAFD69AC}</UniqueIdentifier>
@@ -211,19 +218,40 @@
     <Filter Include="Juce Library Code">
       <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
     </Filter>
-    <Filter Include="JOAuth\Module\Client">
-      <UniqueIdentifier>{30c5e698-6aa7-4f44-b4fd-2f3c62587f83}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Module\JOAuth.cpp">
-      <Filter>JOAuth\Module</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Main\Main.cpp">
       <Filter>JOAuth\Main</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Main\MainComponent.cpp">
       <Filter>JOAuth\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Client\OAuth1aClient.cpp">
+      <Filter>JOAuth\Module\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Client\OAuth1Client.cpp">
+      <Filter>JOAuth\Module\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Client\OAuth2Client.cpp">
+      <Filter>JOAuth\Module\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Source\DropboxSource.cpp">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Source\GitHubSource.cpp">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Source\OAuthSource.cpp">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Source\SoundCloudSource.cpp">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\Source\TwitterSource.cpp">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Module\JOAuth.cpp">
+      <Filter>JOAuth\Module</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_core\text\juce_CharacterFunctions.cpp">
       <Filter>Juce Modules\juce_core\text</Filter>
@@ -432,6 +460,21 @@
     <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_linux_Threads.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_mac_Files.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_mac_Network.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_mac_Strings.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_mac_SystemStats.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_mac_Threads.mm">
+      <Filter>Juce Modules\juce_core\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_core\native\juce_posix_NamedPipe.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
@@ -519,7 +562,13 @@
     <ClCompile Include="..\..\..\juce\modules\juce_events\native\juce_android_Messaging.cpp">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_events\native\juce_ios_MessageManager.mm">
+      <Filter>Juce Modules\juce_events\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_events\native\juce_linux_Messaging.cpp">
+      <Filter>Juce Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_events\native\juce_mac_MessageManager.mm">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_events\native\juce_win32_Messaging.cpp">
@@ -619,6 +668,12 @@
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_graphics\native\juce_linux_Fonts.cpp">
+      <Filter>Juce Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_graphics\native\juce_mac_CoreGraphicsContext.mm">
+      <Filter>Juce Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_graphics\native\juce_mac_Fonts.mm">
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_graphics\native\juce_win32_Direct2DGraphicsContext.cpp">
@@ -969,6 +1024,12 @@
     <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_android_Windowing.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_ios_UIViewComponentPeer.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_ios_Windowing.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_linux_Clipboard.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
@@ -976,6 +1037,21 @@
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_linux_Windowing.cpp">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_mac_FileChooser.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_mac_MainMenu.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_mac_MouseCursor.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_mac_NSViewComponentPeer.mm">
+      <Filter>Juce Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_mac_Windowing.mm">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_basics\native\juce_win32_DragAndDrop.cpp">
@@ -1032,13 +1108,25 @@
     <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_android_WebBrowserComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_ios_UIViewComponent.mm">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_linux_SystemTrayIcon.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_linux_WebBrowserComponent.cpp">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_mac_AppleRemote.mm">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_mac_NSViewComponent.mm">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_mac_SystemTrayIcon.cpp">
+      <Filter>Juce Modules\juce_gui_extra\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_mac_WebBrowserComponent.mm">
       <Filter>Juce Modules\juce_gui_extra\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\native\juce_win32_ActiveXComponent.cpp">
@@ -1071,22 +1159,37 @@
     <ClCompile Include="..\..\..\juce\modules\juce_gui_extra\juce_gui_extra.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Module\Client\OAuth1aClient.cpp">
-      <Filter>JOAuth\Module\Client</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Module\Client\OAuth1Client.cpp">
-      <Filter>JOAuth\Module\Client</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Module\Client\OAuth2Client.cpp">
-      <Filter>JOAuth\Module\Client</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\Module\JOAuth.h">
-      <Filter>JOAuth\Module</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Main\MainComponent.h">
       <Filter>JOAuth\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Client\OAuth1aClient.h">
+      <Filter>JOAuth\Module\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Client\OAuth1Client.h">
+      <Filter>JOAuth\Module\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Client\OAuth2Client.h">
+      <Filter>JOAuth\Module\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Source\DropboxSource.h">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Source\GitHubSource.h">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Source\OAuthSource.h">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Source\SoundCloudSource.h">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\Source\TwitterSource.h">
+      <Filter>JOAuth\Module\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Module\JOAuth.h">
+      <Filter>JOAuth\Module</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\juce\modules\juce_core\text\juce_CharacterFunctions.h">
       <Filter>Juce Modules\juce_core\text</Filter>
@@ -2101,15 +2204,6 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Module\Client\OAuth1aClient.h">
-      <Filter>JOAuth\Module\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Module\Client\OAuth1Client.h">
-      <Filter>JOAuth\Module\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Module\Client\OAuth2Client.h">
-      <Filter>JOAuth\Module\Client</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
