@@ -16,6 +16,10 @@
 
 namespace joauth
 {
+   #ifndef JOAUTH_ACCESS_TOKEN_H
+    #include "Client/AccessToken.h"
+   #endif //JOAUTH_ACCESS_TOKEN_H
+
    #ifndef JOAUTH_OAUTH_1_CLIENT_H
     #include "Client/OAuth1Client.h"
    #endif //JOAUTH_OAUTH_1_CLIENT_H

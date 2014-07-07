@@ -2,6 +2,7 @@
 
 namespace joauth
 {
+    #include "Client/AccessToken.cpp"
     #include "Client/OAuth1Client.cpp"
     #include "Client/OAuth1aClient.cpp"
     #include "Client/OAuth2Client.cpp"

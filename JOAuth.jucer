@@ -13,35 +13,37 @@
     </GROUP>
     <GROUP id="{E6EB0660-7ECA-9EA7-0C93-D38EAFBD75AC}" name="Module">
       <GROUP id="{89805CD8-FCF5-F33C-0792-BC272A09A8C5}" name="Client">
-        <FILE id="eKaIu2" name="OAuth1aClient.cpp" compile="0" resource="0"
+        <FILE id="RuIBK1" name="AccessToken.cpp" compile="0" resource="0" file="Source/Module/Client/AccessToken.cpp"/>
+        <FILE id="YJ4OV1" name="AccessToken.h" compile="0" resource="0" file="Source/Module/Client/AccessToken.h"/>
+        <FILE id="RpZs7G" name="OAuth1aClient.cpp" compile="0" resource="0"
               file="Source/Module/Client/OAuth1aClient.cpp"/>
-        <FILE id="fCIEaX" name="OAuth1aClient.h" compile="0" resource="0" file="Source/Module/Client/OAuth1aClient.h"/>
-        <FILE id="wjBeVw" name="OAuth1Client.cpp" compile="0" resource="0"
+        <FILE id="Ffjiod" name="OAuth1aClient.h" compile="0" resource="0" file="Source/Module/Client/OAuth1aClient.h"/>
+        <FILE id="UtYh0g" name="OAuth1Client.cpp" compile="0" resource="0"
               file="Source/Module/Client/OAuth1Client.cpp"/>
-        <FILE id="PK2NcB" name="OAuth1Client.h" compile="0" resource="0" file="Source/Module/Client/OAuth1Client.h"/>
-        <FILE id="hO8dEI" name="OAuth2Client.cpp" compile="0" resource="0"
+        <FILE id="xjNw2v" name="OAuth1Client.h" compile="0" resource="0" file="Source/Module/Client/OAuth1Client.h"/>
+        <FILE id="w7r3Ks" name="OAuth2Client.cpp" compile="0" resource="0"
               file="Source/Module/Client/OAuth2Client.cpp"/>
-        <FILE id="DNxuSD" name="OAuth2Client.h" compile="0" resource="0" file="Source/Module/Client/OAuth2Client.h"/>
+        <FILE id="s6zR3Z" name="OAuth2Client.h" compile="0" resource="0" file="Source/Module/Client/OAuth2Client.h"/>
       </GROUP>
       <GROUP id="{EA2DE63D-1E27-DC6D-AAC0-03D3B5573BB4}" name="Source">
-        <FILE id="gUseOJ" name="DropboxSource.cpp" compile="0" resource="0"
+        <FILE id="zGlOOA" name="DropboxSource.cpp" compile="0" resource="0"
               file="Source/Module/Source/DropboxSource.cpp"/>
-        <FILE id="ih1lgI" name="DropboxSource.h" compile="0" resource="0" file="Source/Module/Source/DropboxSource.h"/>
-        <FILE id="UiK4Wd" name="GitHubSource.cpp" compile="0" resource="0"
+        <FILE id="JCnDmj" name="DropboxSource.h" compile="0" resource="0" file="Source/Module/Source/DropboxSource.h"/>
+        <FILE id="A4Jdxk" name="GitHubSource.cpp" compile="0" resource="0"
               file="Source/Module/Source/GitHubSource.cpp"/>
-        <FILE id="dghcir" name="GitHubSource.h" compile="0" resource="0" file="Source/Module/Source/GitHubSource.h"/>
-        <FILE id="xiz07f" name="OAuthSource.cpp" compile="0" resource="0" file="Source/Module/Source/OAuthSource.cpp"/>
-        <FILE id="IFdqoa" name="OAuthSource.h" compile="0" resource="0" file="Source/Module/Source/OAuthSource.h"/>
-        <FILE id="VK0BIy" name="SoundCloudSource.cpp" compile="0" resource="0"
+        <FILE id="WPsslk" name="GitHubSource.h" compile="0" resource="0" file="Source/Module/Source/GitHubSource.h"/>
+        <FILE id="gWkBOW" name="OAuthSource.cpp" compile="0" resource="0" file="Source/Module/Source/OAuthSource.cpp"/>
+        <FILE id="bke261" name="OAuthSource.h" compile="0" resource="0" file="Source/Module/Source/OAuthSource.h"/>
+        <FILE id="p25vWu" name="SoundCloudSource.cpp" compile="0" resource="0"
               file="Source/Module/Source/SoundCloudSource.cpp"/>
-        <FILE id="NLgTVQ" name="SoundCloudSource.h" compile="0" resource="0"
+        <FILE id="tZs2mX" name="SoundCloudSource.h" compile="0" resource="0"
               file="Source/Module/Source/SoundCloudSource.h"/>
-        <FILE id="eiPv56" name="TwitterSource.cpp" compile="0" resource="0"
+        <FILE id="oJaV9W" name="TwitterSource.cpp" compile="0" resource="0"
               file="Source/Module/Source/TwitterSource.cpp"/>
-        <FILE id="k41hQN" name="TwitterSource.h" compile="0" resource="0" file="Source/Module/Source/TwitterSource.h"/>
+        <FILE id="PqCbMf" name="TwitterSource.h" compile="0" resource="0" file="Source/Module/Source/TwitterSource.h"/>
       </GROUP>
-      <FILE id="iJS5rJ" name="JOAuth.cpp" compile="1" resource="0" file="Source/Module/JOAuth.cpp"/>
-      <FILE id="MSdPMJ" name="JOAuth.h" compile="0" resource="0" file="Source/Module/JOAuth.h"/>
+      <FILE id="HqXBCZ" name="JOAuth.cpp" compile="1" resource="0" file="Source/Module/JOAuth.cpp"/>
+      <FILE id="FyU8YH" name="JOAuth.h" compile="0" resource="0" file="Source/Module/JOAuth.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>

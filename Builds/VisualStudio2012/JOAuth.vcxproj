@@ -241,6 +241,9 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Main\Main.cpp"/>
     <ClCompile Include="..\..\Source\Main\MainComponent.cpp"/>
+    <ClCompile Include="..\..\Source\Module\Client\AccessToken.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Module\Client\OAuth1aClient.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
@@ -1101,6 +1104,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Main\MainComponent.h"/>
+    <ClInclude Include="..\..\Source\Module\Client\AccessToken.h"/>
     <ClInclude Include="..\..\Source\Module\Client\OAuth1aClient.h"/>
     <ClInclude Include="..\..\Source\Module\Client\OAuth1Client.h"/>
     <ClInclude Include="..\..\Source\Module\Client\OAuth2Client.h"/>

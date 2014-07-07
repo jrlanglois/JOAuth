@@ -3,8 +3,7 @@
 
 #include "../Source/OAuthSource.h"
 
-/**
-    An OAuth 1.0 client implementation.
+/** An OAuth 1.0 client implementation.
 
     @see OAuth1aClient, OAuth2Client
 */
@@ -13,9 +12,6 @@ class OAuth1Client
 public:
     /** Constructor */
     OAuth1Client();
-
-    /** Destructor */
-    ~OAuth1Client();
 
 private:
     //==============================================================================
