@@ -18,6 +18,7 @@
 // [BEGIN_USER_CODE_SECTION]
 
 #define DONT_SET_USING_JUCE_NAMESPACE                   1
+#define JOAUTH_SET_USING_NAMESPACE                      1
 
 // [END_USER_CODE_SECTION]
 

@@ -6,7 +6,7 @@
 
     A base class for online sources of OAuth implementations.
 
-    @see SoundCloudSource, TwitterSource
+    @see DropboxSource, GitHubSource, SoundCloudSource, TwitterSource
 */
 class OAuthSource
 {
@@ -18,6 +18,8 @@ public:
     virtual ~OAuthSource() { }
 
     //==============================================================================
+    /** */
+    virtual juce::String getWebsiteAddress() const = 0;
 
 private:
     //==============================================================================
