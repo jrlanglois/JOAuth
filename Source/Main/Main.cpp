@@ -39,7 +39,7 @@ public:
                                              juce::Colours::lightgrey,
                                              juce::DocumentWindow::allButtons)
         {
-            setContentOwned (new MainContentComponent(), true);
+            setContentOwned (new MainComponent(), true);
 
             centreWithSize (getWidth(), getHeight());
             setVisible (true);

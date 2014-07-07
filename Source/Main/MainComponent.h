@@ -3,10 +3,11 @@
 
 #include "../Module/JOAuth.h"
 
-class MainContentComponent : public juce::Component
+class MainComponent : public juce::Component
 {
 public:
-    MainContentComponent();
+    /** Constructor */
+    MainComponent();
 
     //==============================================================================
     /** @internal */
@@ -16,7 +17,7 @@ public:
 
 private:
     //==============================================================================
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
 
 #endif //MAIN_COMPONENT_H
