@@ -8,12 +8,15 @@
 class OAuth2Client
 {
 public:
-    /** Constructor */
+    /** Constructor
+
+        @param[in] accessToken
+    */
     OAuth2Client (const AccessToken& accessToken);
 
     //==============================================================================
     /** Performs an HTML GET command with the OAuthSource's
-        specified website address.
+        specified website address, and the AccessToken's information.
 
         @param[in] source
     */

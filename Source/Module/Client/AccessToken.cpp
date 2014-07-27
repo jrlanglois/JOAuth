@@ -16,5 +16,5 @@ AccessToken::AccessToken (const juce::String& clientId,
     password (clientPassword.trim())
 {
     jassert (id.isNotEmpty()); //RTFM!
-    jassert (username.isEmpty() == password.isEmpty()); //Usernames usually have passwords associated to them, right?
+    jassert (username.isEmpty() == password.isEmpty()); //Who the hell would have no password with their username?
 }

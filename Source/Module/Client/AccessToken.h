@@ -30,6 +30,7 @@ public:
                  const juce::String& username,
                  const juce::String& password);
 
+    //==============================================================================
     /** The client identification tag, as issued by the authorisation server.
 
         This is a unique string to the authorisation server,
